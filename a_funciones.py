@@ -5,11 +5,7 @@ from tqdm import tqdm  ### para crear contador en un for para ver evolución
 from os.path import join ### para unir ruta con archivo 
 import cv2 ### para leer imagenes jpg
 
-#Ruta principal donde están las carpetas de imágenes
-path = "osiris-contreras/salud/data/"
-
-
-def img2data(path, width=100):
+def img2data(path, width):
     
     rawImgs = []   #### una lista con el array que representa cada imágen
     labels = [] ### el label de cada imágen
