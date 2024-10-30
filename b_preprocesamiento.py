@@ -4,6 +4,14 @@ import numpy as np
 import cv2 ### para leer imagenes jpeg
 #pip install opencv-python
 
+
+import sys
+import os
+path='C:/cod/salud'
+os.chdir(path) ### definir directorio de trabajo
+sys.path.append(path+'/')  ###setting path to read user defined functions
+
+
 from matplotlib import pyplot as plt ## para gráfciar imágnes
 import a_funciones as fn #### funciones personalizadas, carga de imágenes
 import joblib ### para descargar array
